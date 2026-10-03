@@ -1,49 +1,31 @@
 # 토키 · Toki
 
-Windows용 마이크 반응형 PNGTuber입니다. 표정별 PNG를 등록하고, 목소리 크기에 따라 입 모양을 자동으로 바꿉니다.
+Windows용 마이크 반응형 PNGTuber입니다. 표정 PNG와 목소리 크기로 캐릭터가 반응하며, 기본 캐릭터 5종과 선택형 키보드·마우스 소품을 제공합니다.
 
 **[최신 설치 파일 다운로드](https://github.com/monodass-create/toki-releases/releases/latest)**
 
-Windows x64용이며 .NET 런타임을 포함합니다. 설치 파일은 현재 코드 서명이 적용되지 않았습니다.
+Windows x64 · .NET 실행 환경 포함 · 한국어 / English. 설치 파일은 현재 미서명입니다.
 
-## 1.5.1 변경 사항
+## 1.5.2
+Discord 화면 공유용 Toki Share 출력, 방송 출력 설정 정리, 숨긴 창의 갱신 감소, 사용/제작 설명서 PDF·Word 동봉을 포함합니다. 자세한 내용과 확인 범위는 [1.5.2 릴리스](https://github.com/monodass-create/toki-releases/releases/tag/v1.5.2)를 참고하세요.
 
-- 설정 메뉴 위치 고정과 중앙 정렬, 캐릭터 변경 바로가기
-- 입 상태별 PNG 카드와 등록 여부 표시
-- 예시문으로 소음·작은 목소리·평소 목소리·큰 목소리를 측정하는 자동 설정
-- 음성 고급 설정 정리, 미니 모드의 마이크·방송 송신 상태 표시
-- 현재 버전·최신 배포 버전·확인 시각 구분
+## 용도별 출력
+- PRISM: Spout2 캡처에서 Toki를 선택합니다.
+- OBS: [obs-spout2 플러그인](https://github.com/Off-World-Live/obs-spout2-plugin)을 설치하고 Spout2 Capture에서 Toki를 선택합니다.
+- Discord: Toki에서 화면 공유 출력을 켜고 원본 창/모니터를 선택한 뒤, Discord에서 Toki Share 창을 공유합니다. 우측 하단 캐릭터 합성, 영상 전용 720p·최대 약 30fps입니다. 게임 소리는 전달하지 않으며 원본 창을 최소화하지 마세요.
 
-## 창 없이 방송하기
+Toki 설정 창은 트레이로 보내도 됩니다. Spout2 출력과 화면 공유는 따로 켜고 끕니다.
 
-1. Toki의 방송 출력 탭에서 **방송 출력 켜기 · Spout2**를 켭니다.
-2. **내 화면에 캐릭터 창 표시**를 끕니다.
-3. PRISM은 **Spout2 캡처 → Toki**를 선택합니다.
-4. OBS Windows 64비트는 [obs-spout2 플러그인](https://github.com/Off-World-Live/obs-spout2-plugin/releases)을 설치하고 재시작한 뒤 **Spout2 Capture → Toki**를 선택합니다. 투명 합성은 Composite mode의 **Default**를 사용하세요.
-5. Toki를 트레이로 보내도 송신은 유지됩니다. 완전 종료하면 송신도 종료됩니다.
+## 설명서
+설치 파일에 아래 문서가 모두 포함됩니다. 설정 하단 설명서 · 제작 가이드에서 PDF와 Word 폴더를 열 수 있습니다. 문서는 한국어로 제공됩니다.
+- [사용 설명서 PDF](https://github.com/monodass-create/toki-releases/releases/download/v1.5.2/Toki-User-Guide-KO-1.5.2.pdf)
+- [사용 설명서 DOCX](https://github.com/monodass-create/toki-releases/releases/download/v1.5.2/Toki-User-Guide-KO-1.5.2.docx)
+- [캐릭터 제작 설명서 PDF](https://github.com/monodass-create/toki-releases/releases/download/v1.5.2/Toki-Creator-Guide-KO-1.5.2.pdf)
+- [캐릭터 제작 설명서 DOCX](https://github.com/monodass-create/toki-releases/releases/download/v1.5.2/Toki-Creator-Guide-KO-1.5.2.docx)
 
-출력은 512×512, 약 30fps입니다. 실제 수신은 PRISM 5.1.3 및 OBS 32.1.2 + obs-spout2 1.12.0에서 확인했습니다. 다른 PC/GPU 조합과 장시간 방송은 검증되지 않았습니다.
+[웹에서 사용법 읽기](사용설명서.md)
 
 ## 설치와 업데이트
+방송을 마치고 Toki를 트레이에서 완전히 종료한 뒤 설치하세요. 기존 설정·등록 PNG·프로필을 유지합니다. 앱의 업데이트 확인에서도 새 버전을 받을 수 있습니다. 자동 확인은 알림만 표시하며 설치는 사용자가 선택합니다.
 
-트레이 메뉴에서 Toki를 완전히 종료하고 최신 설치 EXE를 실행하세요. 기존 설정은 유지합니다. 0.7부터 앱에서 새 버전 알림과 다운로드·설치를 지원합니다. 자동 확인은 알림만 표시하며, 방송을 마친 뒤 사용자가 설치를 선택해야 합니다. 0.6 이하는 최신 버전을 한 번 수동 설치하세요. GitHub에서 이 저장소의 릴리스 알림을 구독할 수 있습니다.
-
-## 주요 기능
-
-- 기본 표정 6개와 커스텀 표정 4개
-- 표정별 무음·말하기·크게 말하기 PNG 및 선택적 눈깜빡임
-- 마이크 자동 설정, 장치별 설정, Silero VAD, 선택적 RNNoise
-- 직접 지정하는 단축키, 미니 모드, 트레이
-- 대기 움직임·호흡·음량 기반 말 반응과 강도 프리셋
-- 동일 규격의 상단 아이콘과 실행 버전 표시
-- 움직임 일시 정지·전용 단축키, 방송에 영향을 주지 않는 반응 미리보기
-- 출력 여백 가이드, 표정별 움직임과 움직임만 초기화
-- 캐릭터 프로필 전환과 전체 설정·PNG 백업/복원
-- PNG 정렬과 아바타 파일 가져오기·내보내기
-
-슬라임·유령·별·음성 로봇·초록 잎, 기본 캐릭터 5종을 제공합니다. 캐릭터별 선택형 키보드·마우스 반응과 제작 가이드도 포함되어 있습니다. 의존성 라이선스는 설치 폴더의 licenses 및 models에 포함되어 있습니다.
-
-[자세한 사용 설명서](사용설명서.md)
-
-이 저장소는 설치 파일과 안내를 배포하는 곳입니다. 개발 소스는 별도로 관리합니다.
-
+이 저장소는 설치 파일과 안내를 배포하는 곳입니다. 개발 소스는 별도로 관리합니다. 구성 요소의 라이선스 고지는 설치 폴더 licenses 및 models, 기본 캐릭터 이용 조건은 characters 폴더의 안내에 포함합니다.
